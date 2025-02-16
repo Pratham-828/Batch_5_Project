@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.faq {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.faq h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.faq-item a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+
+.support-form {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.support-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.support-form p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>Game Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="MOVIES.html">Movies</a></li>
+                <li><a href="CATEGORIES.html">Categories</a></li>
+                <li><a href="SUPPORT.html">Support</a></li>
+                <li><a href="LOGIN.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>How do I purchase a membership</h3>
+                <p>
+                    To purchase a membership, simply browse our <a href="store.html">Store</a>, select the membership you want, 
+                    and click the "Buy Now" button. Follow the checkout process to complete your purchase.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3>What payment methods do you accept?</h3>
+                <p>
+                    We accept all major credit cards, PayPal,G pay and other popular payment methods. 
+                    You can view the full list of payment options during checkout.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I upgrade my membership?</h3>
+                <p>
+                    You go to your profile and then click on upgrade membership.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="support-form">
+        <h2>Need Help? Contact Support</h2>
+        <p>If you can't find the answer to your question in our FAQ, feel free to reach out to us!</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Game Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
